@@ -11,12 +11,14 @@ def count_letters(text):
                 letter_count[lower_char] = 1
     return letter_count
 
+
 def calculate_frequency(letter_count):
     total_letters = sum(letter_count.values())
     frequency = {}
     for letter, count in letter_count.items():
         frequency[letter] = round(count / total_letters, 2)  # Округляем до двух знаков после запятой
     return frequency
+
 
 main_str = """
 У лукоморья дуб зелёный;
